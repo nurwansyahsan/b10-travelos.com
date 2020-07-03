@@ -1,0 +1,56 @@
+@media all and (max-width: 1000px) {
+   .header-logo {
+      font-size: 28px;
+   }
+
+   .header-menu {
+      float: right;
+   }
+
+   .header-menu a {
+      width: 110px;
+   }
+
+   .header-sosmed {
+      display: none;
+   }
+
+   .lesson {
+      width: 50%;
+      margin-bottom: 30px; 
+   }
+   
+   .teams {
+      flex-wrap: wrap;
+   }
+}
+
+@media all and (max-width: 670px) {
+   .header-logo {
+      font-size: 20px;
+   }
+
+   .header-menu li {
+      display: none;
+   }
+
+   .header-menu li.icon {
+      display: block;
+   }
+
+   .header-menu a {
+      width: 60px;
+   }
+
+   .containers h1 {
+      font-size: 50px;
+   }
+
+   .containers .tag {
+      font-size: 20px;
+   }
+
+   .lesson {
+      width: 100%;
+   }
+}

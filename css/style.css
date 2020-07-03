@@ -1,0 +1,340 @@
+@import url(reset-clear.css);
+
+* {
+   box-sizing: border-box;
+   scroll-behavior: smooth;
+   /* border: 1px solid black; */
+}
+
+body {
+   font-family: "Lucida Grande", sans-serif;
+   /* background: #f1f1f1; */
+   background-image: url(assets/img/latar.png);
+}
+
+a {
+   text-decoration: none;
+}
+
+.container {
+   max-width: 1300px;
+   width: 100%;
+   padding: 0 15px;
+   margin: 0 auto;
+}
+
+
+
+/* Bagian Header */
+header {
+   height: 75px;
+   width: 100%;
+   background-color: rgba(240, 143, 24, 0.9);
+   position :fixed;
+   top: 0px;
+   z-index: 10;
+}
+
+.header-logo {
+   font-size: 35px;
+   padding: 0 20px;
+   float: left;
+   background-color: rgba(163, 161, 155, 0.9);
+   line-height: 75px;
+}
+
+.header-menu {
+   float: left;
+}
+
+.header-menu li {
+   float: left;
+   line-height: 75px;
+}
+
+.header-menu a {
+   display: inline-block;
+   color: white;
+   width: 120px;
+   text-align: center;
+   transition: all 0.5s;
+}
+
+.header-menu li a:hover {
+   background-color: rgba(240, 143, 24, 1);
+   font-weight: bold;
+   color: rgb(22, 22, 22);
+   box-shadow: 0 12px 10px -10px black;
+}
+
+.header-menu .menu-icon {
+   font-size: 30px;
+}
+
+.header-menu li.icon {
+   display: none;
+}
+
+.header-sosmed {
+   float: right;
+}
+
+.header-sosmed .fa {
+   margin-right: 5px;
+}
+
+.header-sosmed .btn {
+   width: 110px;
+   line-height: 45px;
+   margin: 15px 5px 0 5px;
+   color: white;
+   display: inline-block;
+   opacity: 0.8;
+   border-radius: 4px;
+   text-align: center;
+   transition: all 0.5s;
+}
+ 
+.header-sosmed .btn:hover {
+   background-color: rgba(255, 255, 255, 0.3);
+}
+ 
+.twitter {
+   background-color: #55acee;
+}
+
+.instagram {
+   background-color: #e84393;
+}
+
+.facebook {
+   background-color: #3b5998;
+}
+/* Batas untuk Header */
+
+
+
+/* Bagian Main */
+.top-wrapper{
+   position: relative;
+   height: 650px;
+   overflow: hidden;
+   background: url(https://images.unsplash.com/photo-1505993597083-3bd19fb75e57?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=754&q=80) no-repeat center;
+   background-size: cover;
+}
+
+.containers{
+   position: absolute;
+   top: 56%;
+   left: 50%;
+   transform: translate(-50%, -50%);
+   text-align: center;
+   color: #fff;
+   font-weight: 700;
+}
+
+.containers h1 {
+   font-size: 90px;
+   letter-spacing: 0.2em;
+   margin: 0;
+   padding: 20px 0;
+   font-family: 'Yellowtail', cursive;
+   font-weight: normal;
+}
+
+.tag {
+   margin: 20px;
+   font-size: 24px;
+   display: block;
+   text-shadow: 0 0 10px black;
+}
+
+.top-wrapper .btn {
+   display: inline-block;
+   font-size: 16px;
+   color: #313131;
+   padding: 8px 20px;
+   text-decoration: none;
+   border-radius: 8px;
+   background: #f1f1f1;
+   transition: all 0.3s;
+}
+
+.top-wrapper .btn:hover {
+   opacity: 0.8;
+}
+
+.arrows {
+   position: relative;
+   animation-name: arrow;
+   animation-duration: 2.5s;
+   animation-iteration-count: infinite;
+   font-size: 30px;
+   padding-top: 50px;
+}
+ 
+@keyframes arrow {
+   0%   {top:0px;}
+   50%  {top:40px;}
+   100% {top:0px;}
+}
+/* Batas untuk Main */
+
+
+
+/*Bagian Main Tambahan*/
+.lesson-wrapper {
+   padding-top: 70px;
+   padding-bottom: 70px;
+   background-color: #f7f7f7;
+   text-align: center;
+}
+ 
+.heading {
+   margin: 30px 0;
+   color: #5f5d60;
+}
+
+.heading h2 {
+   font-size: 25px;
+   font-weight: bold;
+}
+
+.lessons {
+   margin-top: 50px;
+}
+ 
+.lesson {
+   float: left;
+   width: 25%;
+}
+ 
+.lesson-icon {
+   position: relative;
+   margin: 10px;
+}
+ 
+.lesson-icon img {
+   width: 100%;
+   height: 350px;
+   object-fit: cover;
+   object-position: center;
+}
+
+.lesson-icon p {
+   position: absolute;
+   top: 90px;
+   width: 100%;
+   color: white;
+   font-weight: bold;
+   text-shadow: 2px 2px 2px black ;
+}
+ 
+.txt-contents {
+   margin-top: 20px;
+   padding-bottom: 20px;
+   width: 80%;
+   display: inline-block;
+   font-size: 15px;
+   color: #474447;
+}
+/* Batas untuk Main Tambahan */
+
+
+
+/* Bagian Footer */
+footer {
+   background-color: rgba(240, 143, 24, 1);
+   width: 100%;
+   padding: 20px 0;
+}
+
+footer h2 {
+   font-weight: normal;
+   font-size: 20px;
+}
+
+footer p {
+   color: white;
+   font-size: 12px;
+   margin-top: 10px;
+}
+/* Batas untuk Footer */
+
+
+
+/* Bagian Our Team */
+
+.bottom-wrapper {
+   padding-top: 70px;
+   padding-bottom: 80px;
+   background-color: rgba(248, 164, 7, 0.5);
+   text-align: center;
+}
+
+.bottom-wrapper .heading {
+   margin: 30px 0;
+   color: #5f5d60;
+}
+
+.bottom-wrapper .heading h2 {
+   font-size: 25px;
+   font-weight: bold;
+}
+
+.teams {
+   /* margin-top: 50px; */
+   display: flex;
+   position: relative;
+   flex-wrap: wrap;
+}
+
+.team {
+   flex: auto;
+   background-color: rgb(232, 232, 232);
+   box-shadow: 0 0 8px 5px rgba(0, 0, 0, 0.2);
+   border-radius: 20px;
+   padding: 30px 20px;
+   margin: 20px;
+   font-weight: bold;
+   position: relative;
+   top: 0px;
+   transition: all .5s ease 0s;
+}
+
+.team img {
+   width: 100px;
+   border-radius: 50%;
+   margin-bottom: 20px;
+}
+
+.team .tim {
+   margin: 0 auto;
+   width: 100px;
+   line-height: 30px;
+   border-top-left-radius: 12px;
+   border-bottom-right-radius: 12px;
+   font-size: 14px;
+   color: white;
+   background-color: rgb(240, 143, 24);
+   opacity: 0.8;
+}
+
+.team .nama {
+   margin: 15px auto 0;
+   width: 150px;
+   font-size: 13px;
+}
+
+.team:hover {
+   top: -8px;
+   box-shadow: 0 0 8px 5px rgba(255, 255, 255, 0.3);
+   transition: all .5s ease 0s;
+   opacity: 1;
+}
+
+.team .tim:hover {
+   opacity: 1;
+}
+
+/* Batas untuk Our Team */

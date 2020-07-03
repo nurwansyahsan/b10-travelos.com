@@ -218,6 +218,7 @@ header {
    height: 350px;
    object-fit: cover;
    object-position: center;
+   border: 2px solid rgb(65, 65, 65);
 }
 
 .lesson-icon p {
